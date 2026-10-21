@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0F2F5;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.MainController">
+   <children>
+      <VBox layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="44.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="backrepairs" alignment="CENTER" mnemonicParsing="false" onAction="#BackMenu" prefHeight="37.0" prefWidth="58.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-background-color: #EF4444; -fx-text-fill: #FFFFFF;" text="←">
+                     <font>
+                        <Font name="Alef Regular" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="466.0" text="Repairs Managment">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="488.0" spacing="10.0">
+               <children>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="31.0" prefWidth="104.0" text="Order by:   ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField promptText="text" />
+                  <ChoiceBox prefWidth="150.0" />
+                  <Button fx:id="addrepairs" mnemonicParsing="false" onAction="#AddRepairs" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: grey; -fx-border-radius: 5; -fx-background-radius: 5; -fx-text-fill: #FFFFFF;" text="Add">
+                     <font>
+                        <Font name="Alef Regular" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="10.0" prefWidth="57.0" style="-fx-background-color: gray; -fx-border-radius: 5; -fx-background-radius: 5; -fx-text-fill: #FFFFFF;" text="Del">
+                     <font>
+                        <Font name="Alef Regular" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </HBox>
+            <TableView prefHeight="360.0" prefWidth="600.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Repair id" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="47.0" text="In work: " />
+                  <Label />
+                  <Label prefHeight="17.0" prefWidth="19.0" />
+                  <Label prefHeight="17.0" prefWidth="66.0" text="Not started:" />
+                  <Label prefHeight="17.0" prefWidth="19.0" />
+                  <Label prefHeight="17.0" prefWidth="39.0" text="Ready:" />
+                  <Label prefHeight="17.0" prefWidth="19.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
