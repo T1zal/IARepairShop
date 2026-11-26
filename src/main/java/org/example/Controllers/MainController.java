@@ -2,9 +2,7 @@ package org.example.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import org.example.DataBase;
 
@@ -19,6 +17,22 @@ public class MainController {
     private PasswordField passwordlog;
     @FXML
     private Label statusLabel;
+    @FXML
+    private RadioButton newitem;
+    @FXML
+    private RadioButton additem;
+    @FXML
+    private Label nameLabel;
+    @FXML
+    private TextField nameTextField;
+    @FXML
+    private TextField costTextField;
+    @FXML
+    private Label costLabel;
+    @FXML
+    private ChoiceBox nameChoiceBox;
+
+
 
     @FXML
     private void Register() {
@@ -97,5 +111,30 @@ public class MainController {
     private void AddInventory(ActionEvent event) {
         SwitchSceneController.switchScene(event, "/addinventory.fxml", "Add Inventory");
     }
-
+    @FXML
+    private void ChangeItem(ActionEvent event) {
+        if (newitem.isSelected()) {
+            nameTextField.setOpacity(1.0);
+            nameTextField.setDisable(false);
+            nameTextField.setMouseTransparent(false);
+            nameChoiceBox.setOpacity(0.0);
+            nameChoiceBox.setDisable(true);
+            nameChoiceBox.setMouseTransparent(true);
+            costTextField.setOpacity(1.0);
+            costTextField.setDisable(false);
+            costTextField.setMouseTransparent(false);
+            costLabel.setOpacity(1.0);
+        }else{
+            nameTextField.setOpacity(0.0);
+            nameTextField.setDisable(true);
+            nameTextField.setMouseTransparent(true);
+            nameChoiceBox.setOpacity(1.0);
+            nameChoiceBox.setDisable(false);
+            nameChoiceBox.setMouseTransparent(false);
+            costTextField.setOpacity(0.0);
+            costTextField.setDisable(true);
+            costTextField.setMouseTransparent(true);
+            costLabel.setOpacity(0.0);
+        }
+    }
 }

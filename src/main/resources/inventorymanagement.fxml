@@ -61,7 +61,7 @@
                   </Button>
                </children>
                <padding>
-                  <Insets top="15.0" />
+                  <Insets right="5.0" top="15.0" />
                </padding>
             </HBox>
             <TableView prefHeight="360.0" prefWidth="600.0">
@@ -72,14 +72,17 @@
             </TableView>
             <HBox prefHeight="29.0" prefWidth="600.0">
                <children>
-                  <Label prefHeight="17.0" prefWidth="29.0" text="Red: " />
+                  <Label prefHeight="18.0" prefWidth="23.0" text="Bad:" />
                   <Label />
-                  <Label prefHeight="17.0" prefWidth="19.0" />
-                  <Label prefHeight="17.0" prefWidth="36.0" text="Green:" />
-                  <Label prefHeight="17.0" prefWidth="19.0" />
-                  <Label prefHeight="17.0" prefWidth="39.0" text="Yellow:" />
-                  <Label prefHeight="17.0" prefWidth="19.0" />
+                  <Label prefHeight="17.0" prefWidth="19.0" style="-fx-background-color: #EF4444; -fx-border-radius: 40px; -fx-background-radius: 40px;" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="51.0" text="Normal:" />
+                  <Label prefHeight="17.0" prefWidth="19.0" style="-fx-background-color: yellow; -fx-border-radius: 40px; -fx-background-radius: 40px;" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="42.0" text="Great:" />
+                  <Label prefHeight="17.0" prefWidth="19.0" style="-fx-background-color: #059669; -fx-border-radius: 40px; -fx-background-radius: 40px;" />
                </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
             </HBox>
          </children>
       </VBox>

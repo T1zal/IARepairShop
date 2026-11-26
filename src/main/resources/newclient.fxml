@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="529.0" style="-fx-background-color: #F0F2F5;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.MainController">
    <children>
-      <Label layoutX="203.0" layoutY="14.0" prefHeight="31.0" prefWidth="124.0" text="New Client ">
+      <Label layoutX="203.0" layoutY="35.0" prefHeight="31.0" prefWidth="124.0" text="New Client ">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>

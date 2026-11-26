@@ -50,8 +50,10 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="102.0" layoutY="349.0" prefHeight="17.0" prefWidth="94.0" text="Here will be date" />
-      <Label layoutX="118.0" layoutY="121.0" prefHeight="17.0" prefWidth="62.0" text="Stuff email" />
-      <Label layoutX="79.0" layoutY="237.0" prefHeight="17.0" prefWidth="139.0" text="Problems with inventory, reairs and etc..." />
+      <Label layoutX="95.0" layoutY="93.0" prefHeight="28.0" prefWidth="107.0" text="Staff email">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="274.0" prefHeight="19.0" prefWidth="142.0" text="Problems with inventory, reairs and etc..." />
    </children>
 </AnchorPane>
